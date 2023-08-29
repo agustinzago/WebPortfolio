@@ -14,7 +14,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.png);
+    /* background-image: url(images/background.png); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -29,13 +29,16 @@ nav {
     flex-wrap: wrap;
 }
 .logo{
-    width: 140px;
-
+    font-size: 75px;
+}
+.logo span{
+    color:#2e8703
 }
 nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    font-size: 20px;
 }
 nav ul a{
     color: #fff;
@@ -136,12 +139,13 @@ nav ul li a:hover::after{
 /* ---------SERVICES--------- */
 #services{
     padding: 30px 0;
+
 }
 .services-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
-    margin-top: 50px;
+    margin-top: 150px;
 }
 .services-list div{
     background: #262626;
@@ -150,10 +154,12 @@ nav ul li a:hover::after{
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
+    cursor: pointer;
 }
 .services-list div i{
     font-size: 50px;
     margin-bottom: 30px;
+
 }
 .services-list div h2{
     font-size: 30px;
@@ -171,9 +177,65 @@ nav ul li a:hover::after{
     background: #2e8703;
     transform: translateY(-10px);
 }
+
+.services-list div.flipped {
+    animation: flipAnimation 0.5s;
+}
+.services-list div {
+    position: relative; /* Add this to establish a positioning context */
+}
+
+.services-list div.service-card {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+    cursor: pointer;
+    position: relative;
+}
+
+.services-list div.service-card i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div.service-card h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div.service-card a {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div.service-card:hover {
+    background: #2e8703;
+    transform: translateY(-10px);
+}
+
+.services-list div.service-card.flipped {
+    animation: flipAnimation 0.5s;
+}
+@keyframes flipAnimation {
+    0% {
+        transform: perspective(800px) rotateY(0);
+    }
+    100% {
+        transform: perspective(800px) rotateY(180deg);
+    }
+}
+
+
 /* --------PORTFOLIO--------- */
 #portfolio{
-    padding: 50px;
+    padding: 20px;
+    margin-top: 300px;
 }
 .work-list{
     display: grid;
@@ -278,6 +340,7 @@ nav ul li a:hover::after{
     color: #ababab;
     display: inline-block;
     transition: transform 0.5s;
+    
 }
 .social-icons a:hover{
     color: #2e8703;
