@@ -22,22 +22,26 @@ function closemenu(){
     sidemenu.style.right = "-200px";
 }
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyky2n-6Qec8FKGKbGx9443FyGBXDymcw7yOITd7NTpPlir0lMEqImd_FPxGJTYb5Z_AQ/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwW7VpXPH-4zWgc8YhcJ9LBr4H1Uj0lA93cQGeJwMl72jTWHCKaDR_jPvafFvHeM4dsNA/exec'
 const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
 
 form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => console.log('Success!', response))
+    .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+    })
     .catch(error => console.error('Error!', error.message))
 })
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     const serviceCards = document.querySelectorAll('.services-list div');
 
-//     serviceCards.forEach(card => {
-//         card.addEventListener('click', () => {
-//             card.classList.toggle('flipped'); // Toggle the 'flipped' class
-//         });
-//     });
-// });
+document.getElementById("see-more-btn").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default link behavior
+    document.getElementById("see-more-btn").style.display = "none"; // Hide the button
+    document.getElementById("replacement-message").style.display = "block";
+});

@@ -313,6 +313,13 @@ nav ul li a:hover::after{
 .btn:hover{
     background: #2e8703;
 }
+
+#replacement-message{
+    margin-top: 10%;
+    font-size: 30px;
+    text-align: center;
+    
+}
 /* 
 ------CONTACT-------- */
 .contact-left{
@@ -340,7 +347,7 @@ nav ul li a:hover::after{
     color: #ababab;
     display: inline-block;
     transition: transform 0.5s;
-    
+
 }
 .social-icons a:hover{
     color: #2e8703;
@@ -435,4 +442,9 @@ nav .fa-solid{
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
+}
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
 }
