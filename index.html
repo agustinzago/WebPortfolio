@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0c547f0cf5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Agustin<br>Zago</span> from Argentina</h1>
+            </div>
+        </div>
+    </div>
+    <!-------ABOUT ME------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/User.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subt-title">About me</h1>
+                    <p><br>I'm a dedicated System Engineering student  from Cordoba, Argentina. 
+                        My academic journey has fueled a strong passion for technology and problem-solving.<br>
+                         Currently seeking meaningful projects to contribute to, I'm excited about the possibilities of real-world application.
+                        Known for being friendly and communicative, I believe in the power of collaboration to drive success.<br>
+                         With a keen interest in innovation, I'm eager to channel my skills and knowledge into projects that create impact.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Communication</span><br> Great at sharing ideas,
+                                working well with others<br></li>
+                            <li><span>Teamwork</span><br> Enjoy collaborating with diverse
+                                groups to achieve awesome results together<br></li>
+                            <li><span>Adaptability</span><br> Quick to catch onto new things
+                                and always up for trying new tech <br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Python Tutor</span><br>Freelance<br>01/2023 - 07/2023 - Cordoba, Argentina <br> 
+                                Python tutoring for online classes.
+                                Covered file handling, data processing, plotting, and
+                                data structures. Taught lists, dictionaries, reusable functions, 
+                                user interaction, and exception handling. Instructed OOP and advanced
+                                control structures, empowering structured coding.<br> </li>
+                            <li><span>Ski Valet</span><br>St Regis<br>12/2018 - 05/2019 - Park City, United States <br>  Consistently delivering 
+                                exceptional guest service and ensuring a seamless ski resort experience
+                                Proficiently handled ski equipment, organized storage facilities, and efficiently
+                                coordinated logistics for guests<br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>University | System Engineering</span>
+                                <li><b>Universidad Tecnologica Nacional</b><li>
+                                    <li>04/2019 - present - Cordoba, Argentina</li> 
+                                        <li>Successfully completed 20 classes in pursuit of a Systems Engineering degree<br>
+                                            Acquired a strong foundation in Systems Engineering principles and practices<br> 
+                                        </li>
+                            </li>
+                            <li><span>Programming Skills | React</span>
+                                <li><b>Udemy</b><li>
+                                <li>05/2023 - present - Cordoba, Argentina</li>
+                                <li>Online course</li>
+                            </li>
+                            <li><span>Language | Advanced English Speaker</span>
+                                <li><b>British School</b><li>
+                                <li>CAE (Certificate of Advanced English) - Grade B</li>
+                                <li>FCE (First Certificate Exam) - Grade B</li>
+                                <li>PET (Preliminary English Test) - Passed with merits</li>
+                            </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-----------SERVICES-------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-firefox-browser"></i>
+                <h2>Web Development</h2>
+                <p>Empower your digital presence with expertly crafted web solutions. 
+                    Leveraging my intermediate proficiency in React, JavaScript, CSS, and HTML, 
+                    I specialize in developing dynamic websites and web applications. I create seamless user experiences, 
+                    integrating cutting-edge design and interactivity to showcase your brand effectively.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-react"></i>
+                <h2>Front-End Enhancement</h2>
+                <p>Elevate your user interface to new heights of excellence. 
+                    Drawing on my expertise in React and front-end technologies, I offer specialized enhancement services for existing platforms. 
+                    I optimize responsiveness, elevate visual aesthetics, and fine-tune performance to provide users with a seamless, engaging, 
+                    and high-performing digital experience.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h2>Code Reviews and Quality Assurance</h2>
+                <p>Elevate your code's caliber with my meticulous code reviews.
+                    I'll assess for quality, readability, and adherence to best practices, ensuring a seamless, consistent, and bug-free codebase. 
+                    Let's enhance your project's excellence through rigorous quality assurance.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------PORTFOLIO------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Obcaecati officiis assumenda accusamus eum autem consequatur doloremque? 
+                         Labore fuga ullam, officiis dolor accusamus consequuntur, 
+                        eum incidunt, quasi quibusdam minus modi voluptatum?</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Obcaecati officiis assumenda accusamus eum autem consequatur doloremque? 
+                         Labore fuga ullam, officiis dolor accusamus consequuntur, 
+                        eum incidunt, quasi quibusdam minus modi voluptatum?</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Obcaecati officiis assumenda accusamus eum autem consequatur doloremque? 
+                         Labore fuga ullam, officiis dolor accusamus consequuntur, 
+                        eum incidunt, quasi quibusdam minus modi voluptatum?</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- --------CONTACT------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> zagoagus@gmail.com</p>
+                <p><i class="fa-solid fa-mobile-screen-button"></i> +54 9 351 659 5111 </p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/agustinzago"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/agustinzago"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com/ZagoAgus"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/agust%C3%ADn-zago-9b00a9132/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <a href="/AGUSTIN ZAGO CV (Ingles) (1).pdf" download class="btn btn2">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="text" name="email" placeholder="Your email" required>
+                    <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">Hello</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyky2n-6Qec8FKGKbGx9443FyGBXDymcw7yOITd7NTpPlir0lMEqImd_FPxGJTYb5Z_AQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
