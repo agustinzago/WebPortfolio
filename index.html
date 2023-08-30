@@ -35,7 +35,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/User.png">
+                    <img src="images/Profile fondo gris.png">
                 </div>
                 <div class="about-col-2">
                     <h1 class="subt-title">About me</h1>
@@ -189,9 +189,10 @@
         </div>
     <a href="#" class="btn" id="see-more-btn">See more</a>
     <p id="replacement-message" style="display: none;">Your project could be here!</p></div>
-</div>
-<!-- --------CONTACT------------ -->
-<div id="contact">
+
+
+    <!---------------CONTACT -------------- -->
+</div><div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
@@ -202,17 +203,17 @@
                     <a href="https://www.instagram.com/agustinzago" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://github.com/agustinzago" target="_blank"><i class="fa-brands fa-github"></i></a>
                     <a href="https://twitter.com/ZagoAgus" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/agust%C3%ADn-zago-9b00a9132/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.linkedin.com/in/agustinzago/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
                 <a href="/AGUSTIN ZAGO CV (Ingles) (1).pdf" download class="btn btn2">Download CV</a>
             </div>
 
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your name" required>
-                    <input type="text" name="email" placeholder="Your email" required>
-                    <textarea name="message" rows="6" placeholder="Your message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                    <input type="text" id="name" name="Name" placeholder="Your name" maxlength="50" required>
+                    <input type="email" id="email" name="email" placeholder="Your email" maxlength="50" required>
+                    <textarea name="message" id="message" rows="6" placeholder="Your message" maxlength="1000"></textarea>
+                    <button type="submit" id="submitBtn" class="btn btn2" disabled>Submit</button>
                 </form>
                 <span id="msg"></span>
             </div>
